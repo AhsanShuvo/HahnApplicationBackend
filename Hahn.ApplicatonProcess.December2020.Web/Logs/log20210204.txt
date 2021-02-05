@@ -1,0 +1,385 @@
+2021-02-04 00:55:41.257 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-02-04 00:55:41.331 +06:00 [INF] Request starting HTTP/2 GET https://localhost:44379/swagger/index.html - -
+2021-02-04 00:55:41.333 +06:00 [INF] Hosting environment: Development
+2021-02-04 00:55:41.334 +06:00 [INF] Content root path: G:\Hahn.ApplicatonProcess.Application\Hahn.ApplicatonProcess.December2020.Web
+2021-02-04 00:55:41.355 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Swashbuckle.AspNetCore.Filters.RequestExample' while attempting to activate 'Swashbuckle.AspNetCore.Filters.ExamplesOperationFilter'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Swashbuckle.AspNetCore.SwaggerGen.ConfigureSwaggerGeneratorOptions.CreateFilter[TFilter](FilterDescriptor filterDescriptor)
+   at Swashbuckle.AspNetCore.SwaggerGen.ConfigureSwaggerGeneratorOptions.<>c__DisplayClass4_0.<Configure>b__2(FilterDescriptor filterDescriptor)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Swashbuckle.AspNetCore.SwaggerGen.ConfigureSwaggerGeneratorOptions.Configure(SwaggerGeneratorOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsManager`1.<>c__DisplayClass5_0.<Get>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.get_Value()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd(String name, Func`1 createOptions)
+   at Microsoft.Extensions.Options.OptionsManager`1.Get(String name)
+   at Microsoft.Extensions.Options.OptionsManager`1.get_Value()
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenServiceCollectionExtensions.<>c.<AddSwaggerGen>b__0_1(IServiceProvider s)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.GetService(IServiceProvider sp, Type type, Type middleware)
+   at lambda_method1(Closure , Object , HttpContext , IServiceProvider )
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass5_1.<UseMiddleware>b__2(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-02-04 00:55:41.521 +06:00 [INF] Request finished HTTP/2 GET https://localhost:44379/swagger/index.html - - - 500 - text/html;+charset=utf-8 190.7848ms
+2021-02-04 00:55:42.065 +06:00 [INF] Request starting HTTP/2 GET https://localhost:44379/favicon.ico - -
+2021-02-04 00:55:42.067 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Swashbuckle.AspNetCore.Filters.RequestExample' while attempting to activate 'Swashbuckle.AspNetCore.Filters.ExamplesOperationFilter'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Swashbuckle.AspNetCore.SwaggerGen.ConfigureSwaggerGeneratorOptions.CreateFilter[TFilter](FilterDescriptor filterDescriptor)
+   at Swashbuckle.AspNetCore.SwaggerGen.ConfigureSwaggerGeneratorOptions.<>c__DisplayClass4_0.<Configure>b__2(FilterDescriptor filterDescriptor)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Swashbuckle.AspNetCore.SwaggerGen.ConfigureSwaggerGeneratorOptions.Configure(SwaggerGeneratorOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsManager`1.<>c__DisplayClass5_0.<Get>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+--- End of stack trace from previous location ---
+   at System.Lazy`1.CreateValue()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd(String name, Func`1 createOptions)
+   at Microsoft.Extensions.Options.OptionsManager`1.Get(String name)
+   at Microsoft.Extensions.Options.OptionsManager`1.get_Value()
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenServiceCollectionExtensions.<>c.<AddSwaggerGen>b__0_1(IServiceProvider s)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.GetService(IServiceProvider sp, Type type, Type middleware)
+   at lambda_method1(Closure , Object , HttpContext , IServiceProvider )
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass5_1.<UseMiddleware>b__2(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-02-04 00:55:42.088 +06:00 [INF] Request finished HTTP/2 GET https://localhost:44379/favicon.ico - - - 500 - text/plain 23.2078ms
+2021-02-04 00:56:52.527 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-02-04 00:56:52.573 +06:00 [INF] Request starting HTTP/2 GET https://localhost:44379/swagger/index.html - -
+2021-02-04 00:56:52.588 +06:00 [INF] Hosting environment: Development
+2021-02-04 00:56:52.588 +06:00 [INF] Content root path: G:\Hahn.ApplicatonProcess.Application\Hahn.ApplicatonProcess.December2020.Web
+2021-02-04 00:56:52.859 +06:00 [INF] Request finished HTTP/2 GET https://localhost:44379/swagger/index.html - - - 200 - text/html;charset=utf-8 290.5174ms
+2021-02-04 00:56:53.309 +06:00 [INF] Request starting HTTP/2 GET https://localhost:44379/swagger/v1/swagger.json - -
+2021-02-04 00:56:53.435 +06:00 [INF] Request finished HTTP/2 GET https://localhost:44379/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 126.7435ms
+2021-02-04 01:54:29.257 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-02-04 01:54:29.349 +06:00 [INF] Request starting HTTP/2 GET https://localhost:44379/swagger/index.html - -
+2021-02-04 01:54:29.364 +06:00 [INF] Hosting environment: Development
+2021-02-04 01:54:29.364 +06:00 [INF] Content root path: G:\Hahn.ApplicatonProcess.Application\Hahn.ApplicatonProcess.December2020.Web
+2021-02-04 01:55:02.621 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-02-04 01:55:02.666 +06:00 [INF] Request starting HTTP/2 GET https://localhost:44379/swagger/index.html - -
+2021-02-04 01:55:02.669 +06:00 [INF] Hosting environment: Development
+2021-02-04 01:55:02.669 +06:00 [INF] Content root path: G:\Hahn.ApplicatonProcess.Application\Hahn.ApplicatonProcess.December2020.Web
+2021-02-04 01:55:02.850 +06:00 [INF] Request finished HTTP/2 GET https://localhost:44379/swagger/index.html - - - 200 - text/html;charset=utf-8 187.1418ms
+2021-02-04 01:55:03.212 +06:00 [INF] Request starting HTTP/2 GET https://localhost:44379/swagger/v1/swagger.json - -
+2021-02-04 01:55:03.332 +06:00 [INF] Request finished HTTP/2 GET https://localhost:44379/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 119.6831ms
+2021-02-04 01:57:42.220 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-02-04 01:57:42.277 +06:00 [INF] Request starting HTTP/2 GET https://localhost:44379/swagger/index.html - -
+2021-02-04 01:57:42.291 +06:00 [INF] Hosting environment: Development
+2021-02-04 01:57:42.291 +06:00 [INF] Content root path: G:\Hahn.ApplicatonProcess.Application\Hahn.ApplicatonProcess.December2020.Web
+2021-02-04 01:57:42.430 +06:00 [INF] Request finished HTTP/2 GET https://localhost:44379/swagger/index.html - - - 200 - text/html;charset=utf-8 157.5944ms
+2021-02-04 01:57:42.810 +06:00 [INF] Request starting HTTP/2 GET https://localhost:44379/swagger/v1/swagger.json - -
+2021-02-04 01:57:42.954 +06:00 [INF] Request finished HTTP/2 GET https://localhost:44379/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 144.1911ms
+2021-02-04 02:03:04.884 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-02-04 02:03:04.922 +06:00 [INF] Request starting HTTP/2 GET https://localhost:44379/swagger/index.html - -
+2021-02-04 02:03:04.929 +06:00 [INF] Hosting environment: Development
+2021-02-04 02:03:04.929 +06:00 [INF] Content root path: G:\Hahn.ApplicatonProcess.Application\Hahn.ApplicatonProcess.December2020.Web
+2021-02-04 02:03:05.073 +06:00 [INF] Request finished HTTP/2 GET https://localhost:44379/swagger/index.html - - - 200 - text/html;charset=utf-8 153.3563ms
+2021-02-04 02:03:05.532 +06:00 [INF] Request starting HTTP/2 GET https://localhost:44379/swagger/v1/swagger.json - -
+2021-02-04 02:03:05.644 +06:00 [INF] Request finished HTTP/2 GET https://localhost:44379/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 112.3795ms
+2021-02-04 02:03:53.451 +06:00 [INF] Request starting HTTP/2 POST https://localhost:44379/api/ApplicantApi application/json 157
+2021-02-04 02:03:53.541 +06:00 [INF] Executing endpoint 'Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantApiController.PostApplicant (Hahn.ApplicatonProcess.December2020.Web)'
+2021-02-04 02:03:53.581 +06:00 [INF] Route matched with {action = "PostApplicant", controller = "ApplicantApi"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult PostApplicant(Hahn.ApplicatonProcess.December2020.Domain.Models.ApplicantViewModel) on controller Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantApiController (Hahn.ApplicatonProcess.December2020.Web).
+2021-02-04 02:03:55.637 +06:00 [INF] Entity Framework Core 5.0.2 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: MaxPoolSize=128 StoreName=ApplicantDB 
+2021-02-04 02:03:55.778 +06:00 [INF] Saved 1 entities to in-memory store.
+2021-02-04 02:03:55.786 +06:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 201
+2021-02-04 02:03:55.791 +06:00 [INF] Executed action Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantApiController.PostApplicant (Hahn.ApplicatonProcess.December2020.Web) in 2205.2394ms
+2021-02-04 02:03:55.791 +06:00 [INF] Executed endpoint 'Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantApiController.PostApplicant (Hahn.ApplicatonProcess.December2020.Web)'
+2021-02-04 02:03:55.803 +06:00 [INF] Request finished HTTP/2 POST https://localhost:44379/api/ApplicantApi application/json 157 - 201 - - 2352.3189ms
+2021-02-04 02:05:04.951 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-02-04 02:05:05.000 +06:00 [INF] Hosting environment: Development
+2021-02-04 02:05:04.998 +06:00 [INF] Request starting HTTP/2 GET https://localhost:44379/swagger/index.html - -
+2021-02-04 02:05:05.001 +06:00 [INF] Content root path: G:\Hahn.ApplicatonProcess.Application\Hahn.ApplicatonProcess.December2020.Web
+2021-02-04 02:05:05.481 +06:00 [INF] Request finished HTTP/2 GET https://localhost:44379/swagger/index.html - - - 200 - text/html;charset=utf-8 485.5626ms
+2021-02-04 02:05:05.957 +06:00 [INF] Request starting HTTP/2 GET https://localhost:44379/swagger/v1/swagger.json - -
+2021-02-04 02:05:06.096 +06:00 [INF] Request finished HTTP/2 GET https://localhost:44379/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 139.2344ms
+2021-02-04 02:06:58.825 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-02-04 02:06:58.865 +06:00 [INF] Request starting HTTP/2 GET https://localhost:44379/swagger/index.html - -
+2021-02-04 02:06:58.873 +06:00 [INF] Hosting environment: Development
+2021-02-04 02:06:58.873 +06:00 [INF] Content root path: G:\Hahn.ApplicatonProcess.Application\Hahn.ApplicatonProcess.December2020.Web
+2021-02-04 02:06:59.004 +06:00 [INF] Request finished HTTP/2 GET https://localhost:44379/swagger/index.html - - - 200 - text/html;charset=utf-8 142.6117ms
+2021-02-04 02:06:59.414 +06:00 [INF] Request starting HTTP/2 GET https://localhost:44379/swagger/v1/swagger.json - -
+2021-02-04 02:06:59.530 +06:00 [INF] Request finished HTTP/2 GET https://localhost:44379/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 116.1155ms
+2021-02-04 02:15:54.353 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-02-04 02:15:54.399 +06:00 [INF] Request starting HTTP/2 GET https://localhost:44379/swagger/index.html - -
+2021-02-04 02:15:54.406 +06:00 [INF] Hosting environment: Development
+2021-02-04 02:15:54.407 +06:00 [INF] Content root path: G:\Hahn.ApplicatonProcess.Application\Hahn.ApplicatonProcess.December2020.Web
+2021-02-04 02:15:54.532 +06:00 [INF] Request finished HTTP/2 GET https://localhost:44379/swagger/index.html - - - 200 - text/html;charset=utf-8 133.1217ms
+2021-02-04 02:15:54.909 +06:00 [INF] Request starting HTTP/2 GET https://localhost:44379/swagger/v1/swagger.json - -
+2021-02-04 02:15:55.025 +06:00 [INF] Request finished HTTP/2 GET https://localhost:44379/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 115.1931ms
+2021-02-04 02:16:19.699 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-02-04 02:16:19.746 +06:00 [INF] Request starting HTTP/2 GET https://localhost:44379/swagger/index.html - -
+2021-02-04 02:16:19.760 +06:00 [INF] Hosting environment: Development
+2021-02-04 02:16:19.763 +06:00 [INF] Content root path: G:\Hahn.ApplicatonProcess.Application\Hahn.ApplicatonProcess.December2020.Web
+2021-02-04 02:16:19.958 +06:00 [INF] Request finished HTTP/2 GET https://localhost:44379/swagger/index.html - - - 200 - text/html;charset=utf-8 216.8590ms
+2021-02-04 02:16:20.339 +06:00 [INF] Request starting HTTP/2 GET https://localhost:44379/swagger/v1/swagger.json - -
+2021-02-04 02:16:20.513 +06:00 [INF] Request finished HTTP/2 GET https://localhost:44379/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 174.5988ms
+2021-02-04 02:16:33.717 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-02-04 02:16:33.750 +06:00 [INF] Request starting HTTP/2 GET https://localhost:44379/swagger/index.html - -
+2021-02-04 02:16:33.758 +06:00 [INF] Hosting environment: Development
+2021-02-04 02:16:33.758 +06:00 [INF] Content root path: G:\Hahn.ApplicatonProcess.Application\Hahn.ApplicatonProcess.December2020.Web
+2021-02-04 02:16:33.891 +06:00 [INF] Request finished HTTP/2 GET https://localhost:44379/swagger/index.html - - - 200 - text/html;charset=utf-8 144.2330ms
+2021-02-04 02:16:34.264 +06:00 [INF] Request starting HTTP/2 GET https://localhost:44379/swagger/v1/swagger.json - -
+2021-02-04 02:16:34.379 +06:00 [INF] Request finished HTTP/2 GET https://localhost:44379/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 115.0817ms
+2021-02-04 02:16:49.276 +06:00 [INF] Request starting HTTP/2 POST https://localhost:44379/api/ApplicantApi application/json 137
+2021-02-04 02:16:49.313 +06:00 [INF] Executing endpoint 'Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantApiController.PostApplicant (Hahn.ApplicatonProcess.December2020.Web)'
+2021-02-04 02:16:49.342 +06:00 [INF] Route matched with {action = "PostApplicant", controller = "ApplicantApi"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult PostApplicant(Hahn.ApplicatonProcess.December2020.Domain.Models.ApplicantViewModel) on controller Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantApiController (Hahn.ApplicatonProcess.December2020.Web).
+2021-02-04 02:16:51.649 +06:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2021-02-04 02:16:51.671 +06:00 [INF] Executed action Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantApiController.PostApplicant (Hahn.ApplicatonProcess.December2020.Web) in 2316.4763ms
+2021-02-04 02:16:51.673 +06:00 [INF] Executed endpoint 'Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantApiController.PostApplicant (Hahn.ApplicatonProcess.December2020.Web)'
+2021-02-04 02:16:51.691 +06:00 [INF] Request finished HTTP/2 POST https://localhost:44379/api/ApplicantApi application/json 137 - 400 - application/json;+charset=utf-8 2415.2398ms
+2021-02-04 02:18:43.853 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-02-04 02:18:43.888 +06:00 [INF] Request starting HTTP/2 GET https://localhost:44379/swagger/index.html - -
+2021-02-04 02:18:43.895 +06:00 [INF] Hosting environment: Development
+2021-02-04 02:18:43.895 +06:00 [INF] Content root path: G:\Hahn.ApplicatonProcess.Application\Hahn.ApplicatonProcess.December2020.Web
+2021-02-04 02:18:44.051 +06:00 [INF] Request finished HTTP/2 GET https://localhost:44379/swagger/index.html - - - 200 - text/html;charset=utf-8 166.4308ms
+2021-02-04 02:18:44.467 +06:00 [INF] Request starting HTTP/2 GET https://localhost:44379/swagger/v1/swagger.json - -
+2021-02-04 02:18:44.626 +06:00 [INF] Request finished HTTP/2 GET https://localhost:44379/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 158.9468ms
+2021-02-04 02:26:47.932 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-02-04 02:26:47.983 +06:00 [INF] Request starting HTTP/2 GET https://localhost:44379/swagger/index.html - -
+2021-02-04 02:26:47.991 +06:00 [INF] Hosting environment: Development
+2021-02-04 02:26:47.992 +06:00 [INF] Content root path: G:\Hahn.ApplicatonProcess.Application\Hahn.ApplicatonProcess.December2020.Web
+2021-02-04 02:26:48.152 +06:00 [INF] Request finished HTTP/2 GET https://localhost:44379/swagger/index.html - - - 200 - text/html;charset=utf-8 172.3756ms
+2021-02-04 02:26:48.494 +06:00 [INF] Request starting HTTP/2 GET https://localhost:44379/swagger/v1/swagger.json - -
+2021-02-04 02:26:48.649 +06:00 [INF] Request finished HTTP/2 GET https://localhost:44379/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 155.2707ms
+2021-02-04 02:26:58.479 +06:00 [INF] Request starting HTTP/2 POST https://localhost:44379/api/ApplicantApi application/json 157
+2021-02-04 02:26:58.517 +06:00 [INF] Executing endpoint 'Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantApiController.PostApplicant (Hahn.ApplicatonProcess.December2020.Web)'
+2021-02-04 02:26:58.539 +06:00 [INF] Route matched with {action = "PostApplicant", controller = "ApplicantApi"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult PostApplicant(Hahn.ApplicatonProcess.December2020.Domain.Models.ApplicantViewModel) on controller Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantApiController (Hahn.ApplicatonProcess.December2020.Web).
+2021-02-04 02:27:04.685 +06:00 [INF] Entity Framework Core 5.0.2 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: MaxPoolSize=128 StoreName=ApplicantDB 
+2021-02-04 02:27:06.672 +06:00 [INF] Saved 1 entities to in-memory store.
+2021-02-04 02:27:22.075 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-02-04 02:27:22.107 +06:00 [INF] Request starting HTTP/2 GET https://localhost:44379/swagger/index.html - -
+2021-02-04 02:27:22.116 +06:00 [INF] Hosting environment: Development
+2021-02-04 02:27:22.116 +06:00 [INF] Content root path: G:\Hahn.ApplicatonProcess.Application\Hahn.ApplicatonProcess.December2020.Web
+2021-02-04 02:27:22.242 +06:00 [INF] Request finished HTTP/2 GET https://localhost:44379/swagger/index.html - - - 200 - text/html;charset=utf-8 138.7315ms
+2021-02-04 02:27:22.681 +06:00 [INF] Request starting HTTP/2 GET https://localhost:44379/swagger/v1/swagger.json - -
+2021-02-04 02:27:22.817 +06:00 [INF] Request finished HTTP/2 GET https://localhost:44379/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 135.7026ms
+2021-02-04 02:27:31.542 +06:00 [INF] Request starting HTTP/2 POST https://localhost:44379/api/ApplicantApi application/json 148
+2021-02-04 02:27:31.604 +06:00 [INF] Executing endpoint 'Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantApiController.PostApplicant (Hahn.ApplicatonProcess.December2020.Web)'
+2021-02-04 02:27:31.627 +06:00 [INF] Route matched with {action = "PostApplicant", controller = "ApplicantApi"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult PostApplicant(Hahn.ApplicatonProcess.December2020.Domain.Models.ApplicantViewModel) on controller Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantApiController (Hahn.ApplicatonProcess.December2020.Web).
+2021-02-04 02:27:35.631 +06:00 [INF] Entity Framework Core 5.0.2 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: MaxPoolSize=128 StoreName=ApplicantDB 
+2021-02-04 02:32:40.595 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-02-04 02:32:40.639 +06:00 [INF] Request starting HTTP/2 GET https://localhost:44379/swagger/index.html - -
+2021-02-04 02:32:40.650 +06:00 [INF] Hosting environment: Development
+2021-02-04 02:32:40.651 +06:00 [INF] Content root path: G:\Hahn.ApplicatonProcess.Application\Hahn.ApplicatonProcess.December2020.Web
+2021-02-04 02:32:40.805 +06:00 [INF] Request finished HTTP/2 GET https://localhost:44379/swagger/index.html - - - 200 - text/html;charset=utf-8 170.6504ms
+2021-02-04 02:32:41.258 +06:00 [INF] Request starting HTTP/2 GET https://localhost:44379/swagger/v1/swagger.json - -
+2021-02-04 02:32:41.404 +06:00 [INF] Request finished HTTP/2 GET https://localhost:44379/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 146.1332ms
+2021-02-04 02:33:04.626 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-02-04 02:33:04.674 +06:00 [INF] Request starting HTTP/2 GET https://localhost:44379/swagger/index.html - -
+2021-02-04 02:33:04.682 +06:00 [INF] Hosting environment: Development
+2021-02-04 02:33:04.682 +06:00 [INF] Content root path: G:\Hahn.ApplicatonProcess.Application\Hahn.ApplicatonProcess.December2020.Web
+2021-02-04 02:33:04.813 +06:00 [INF] Request finished HTTP/2 GET https://localhost:44379/swagger/index.html - - - 200 - text/html;charset=utf-8 141.9933ms
+2021-02-04 02:33:05.144 +06:00 [INF] Request starting HTTP/2 GET https://localhost:44379/swagger/v1/swagger.json - -
+2021-02-04 02:33:05.286 +06:00 [INF] Request finished HTTP/2 GET https://localhost:44379/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 142.4083ms
+2021-02-04 02:33:21.777 +06:00 [INF] Request starting HTTP/2 POST https://localhost:44379/api/ApplicantApi application/json 148
+2021-02-04 02:33:21.818 +06:00 [INF] Executing endpoint 'Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantApiController.PostApplicant (Hahn.ApplicatonProcess.December2020.Web)'
+2021-02-04 02:33:21.841 +06:00 [INF] Route matched with {action = "PostApplicant", controller = "ApplicantApi"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult PostApplicant(Hahn.ApplicatonProcess.December2020.Domain.Models.ApplicantViewModel) on controller Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantApiController (Hahn.ApplicatonProcess.December2020.Web).
+2021-02-04 02:33:23.490 +06:00 [INF] Entity Framework Core 5.0.2 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: MaxPoolSize=128 StoreName=ApplicantDB 
+2021-02-04 02:33:23.616 +06:00 [INF] Saved 1 entities to in-memory store.
+2021-02-04 02:33:23.628 +06:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Http.DefaultHttpResponse'.
+2021-02-04 02:33:23.653 +06:00 [INF] Executed action Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantApiController.PostApplicant (Hahn.ApplicatonProcess.December2020.Web) in 1807.599ms
+2021-02-04 02:33:23.655 +06:00 [INF] Executed endpoint 'Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantApiController.PostApplicant (Hahn.ApplicatonProcess.December2020.Web)'
+2021-02-04 02:33:23.657 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NotSupportedException: Serialization and deserialization of 'System.Type' instances are not supported and should be avoided since they can lead to security issues. Path: $.HttpContext.Features.Key.
+ ---> System.NotSupportedException: Serialization and deserialization of 'System.Type' instances are not supported and should be avoided since they can lead to security issues.
+   at System.Text.Json.Serialization.Converters.TypeConverter.Write(Utf8JsonWriter writer, Type value, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableOfTConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ThrowNotSupportedException(WriteStack& state, NotSupportedException ex)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCoreAsObject(Utf8JsonWriter writer, Object value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonSerializer.WriteCore[TValue](JsonConverter jsonConverter, Utf8JsonWriter writer, TValue& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonSerializer.WriteAsyncCore[TValue](Stream utf8Json, TValue value, Type inputType, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-02-04 02:33:23.736 +06:00 [INF] Request finished HTTP/2 POST https://localhost:44379/api/ApplicantApi application/json 148 - 500 - text/plain 1959.2270ms
+2021-02-04 02:34:43.737 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-02-04 02:34:43.800 +06:00 [INF] Hosting environment: Development
+2021-02-04 02:34:43.784 +06:00 [INF] Request starting HTTP/2 GET https://localhost:44379/swagger/index.html - -
+2021-02-04 02:34:43.802 +06:00 [INF] Content root path: G:\Hahn.ApplicatonProcess.Application\Hahn.ApplicatonProcess.December2020.Web
+2021-02-04 02:34:43.942 +06:00 [INF] Request finished HTTP/2 GET https://localhost:44379/swagger/index.html - - - 200 - text/html;charset=utf-8 161.4733ms
+2021-02-04 02:34:44.323 +06:00 [INF] Request starting HTTP/2 GET https://localhost:44379/swagger/v1/swagger.json - -
+2021-02-04 02:34:44.500 +06:00 [INF] Request finished HTTP/2 GET https://localhost:44379/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 176.9332ms
+2021-02-04 02:34:52.595 +06:00 [INF] Request starting HTTP/2 POST https://localhost:44379/api/ApplicantApi application/json 148
+2021-02-04 02:34:52.664 +06:00 [INF] Executing endpoint 'Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantApiController.PostApplicant (Hahn.ApplicatonProcess.December2020.Web)'
+2021-02-04 02:34:52.686 +06:00 [INF] Route matched with {action = "PostApplicant", controller = "ApplicantApi"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult PostApplicant(Hahn.ApplicatonProcess.December2020.Domain.Models.ApplicantViewModel) on controller Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantApiController (Hahn.ApplicatonProcess.December2020.Web).
+2021-02-04 02:35:11.177 +06:00 [INF] Entity Framework Core 5.0.2 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: MaxPoolSize=128 StoreName=ApplicantDB 
+2021-02-04 02:35:12.922 +06:00 [INF] Saved 1 entities to in-memory store.
+2021-02-04 02:36:40.993 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-02-04 02:36:41.134 +06:00 [INF] Request starting HTTP/2 GET https://localhost:44379/swagger/index.html - -
+2021-02-04 02:36:41.148 +06:00 [INF] Hosting environment: Development
+2021-02-04 02:36:41.149 +06:00 [INF] Content root path: G:\Hahn.ApplicatonProcess.Application\Hahn.ApplicatonProcess.December2020.Web
+2021-02-04 02:36:41.396 +06:00 [INF] Request finished HTTP/2 GET https://localhost:44379/swagger/index.html - - - 200 - text/html;charset=utf-8 265.6484ms
+2021-02-04 02:36:41.901 +06:00 [INF] Request starting HTTP/2 GET https://localhost:44379/swagger/v1/swagger.json - -
+2021-02-04 02:36:42.091 +06:00 [INF] Request finished HTTP/2 GET https://localhost:44379/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 190.1881ms
+2021-02-04 02:36:52.667 +06:00 [INF] Request starting HTTP/2 POST https://localhost:44379/api/ApplicantApi application/json 155
+2021-02-04 02:36:52.718 +06:00 [INF] Executing endpoint 'Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantApiController.PostApplicant (Hahn.ApplicatonProcess.December2020.Web)'
+2021-02-04 02:36:52.747 +06:00 [INF] Route matched with {action = "PostApplicant", controller = "ApplicantApi"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult PostApplicant(Hahn.ApplicatonProcess.December2020.Domain.Models.ApplicantViewModel) on controller Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantApiController (Hahn.ApplicatonProcess.December2020.Web).
+2021-02-04 02:36:57.470 +06:00 [INF] Entity Framework Core 5.0.2 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: MaxPoolSize=128 StoreName=ApplicantDB 
+2021-02-04 02:36:57.624 +06:00 [INF] Saved 1 entities to in-memory store.
+2021-02-04 02:37:00.856 +06:00 [INF] Executing ObjectResult, writing value of type 'Hahn.ApplicatonProcess.December2020.Domain.Models.ApplicantViewModel'.
+2021-02-04 02:37:00.864 +06:00 [INF] Executed action Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantApiController.PostApplicant (Hahn.ApplicatonProcess.December2020.Web) in 8110.5328ms
+2021-02-04 02:37:00.864 +06:00 [INF] Executed endpoint 'Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantApiController.PostApplicant (Hahn.ApplicatonProcess.December2020.Web)'
+2021-02-04 02:37:00.875 +06:00 [INF] Request finished HTTP/2 POST https://localhost:44379/api/ApplicantApi application/json 155 - 201 - application/json;+charset=utf-8 8208.2226ms
+2021-02-04 02:37:29.549 +06:00 [INF] Request starting HTTP/2 PUT https://localhost:44379/api/ApplicantApi/1 application/json 148
+2021-02-04 02:37:29.550 +06:00 [INF] Executing endpoint 'Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantApiController.UpdateApplicant (Hahn.ApplicatonProcess.December2020.Web)'
+2021-02-04 02:37:29.555 +06:00 [INF] Route matched with {action = "UpdateApplicant", controller = "ApplicantApi"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult UpdateApplicant(Int32, Hahn.ApplicatonProcess.December2020.Domain.Models.ApplicantViewModel) on controller Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantApiController (Hahn.ApplicatonProcess.December2020.Web).
+2021-02-04 02:37:30.669 +06:00 [ERR] Failed to connect to the database server to update applicant info.
+System.InvalidOperationException: The instance of entity type 'Applicant' cannot be tracked because another instance with the same key value for {'ID'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.ThrowIdentityConflict(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry, Boolean updateDuplicate)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.StartTracking(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState oldState, EntityState newState, Boolean acceptChanges, Boolean modifyProperties)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState entityState, Boolean acceptChanges, Boolean modifyProperties, Nullable`1 forceStateWhenUnknownKey)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.PaintAction(EntityEntryGraphNode`1 node)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityEntryGraphIterator.TraverseGraph[TState](EntityEntryGraphNode`1 node, Func`2 handleNode)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.AttachGraph(InternalEntityEntry rootEntry, EntityState targetState, EntityState storeGeneratedWithKeySetTargetState, Boolean forceStateWhenUnknownKey)
+   at Microsoft.EntityFrameworkCore.DbContext.SetEntityState(InternalEntityEntry entry, EntityState entityState)
+   at Microsoft.EntityFrameworkCore.DbContext.SetEntityState[TEntity](TEntity entity, EntityState entityState)
+   at Microsoft.EntityFrameworkCore.DbContext.Attach[TEntity](TEntity entity)
+   at Hahn.ApplicatonProcess.December2020.Data.Repository.ApplicantRepository.UpdateApplicantInfo(Int32 id, Applicant model) in G:\Hahn.ApplicatonProcess.Application\Hahn.ApplicatonProcess.December2020.Data\Repository\ApplicantRepository.cs:line 56
+2021-02-04 02:37:30.735 +06:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2021-02-04 02:37:30.742 +06:00 [INF] Executed action Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantApiController.UpdateApplicant (Hahn.ApplicatonProcess.December2020.Web) in 1186.8228ms
+2021-02-04 02:37:30.742 +06:00 [INF] Executed endpoint 'Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantApiController.UpdateApplicant (Hahn.ApplicatonProcess.December2020.Web)'
+2021-02-04 02:37:30.743 +06:00 [INF] Request finished HTTP/2 PUT https://localhost:44379/api/ApplicantApi/1 application/json 148 - 500 - application/problem+json;+charset=utf-8 1194.1735ms
+2021-02-04 02:38:02.855 +06:00 [INF] Request starting HTTP/2 PUT https://localhost:44379/api/ApplicantApi/1 application/json 148
+2021-02-04 02:38:02.855 +06:00 [INF] Executing endpoint 'Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantApiController.UpdateApplicant (Hahn.ApplicatonProcess.December2020.Web)'
+2021-02-04 02:38:02.856 +06:00 [INF] Route matched with {action = "UpdateApplicant", controller = "ApplicantApi"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult UpdateApplicant(Int32, Hahn.ApplicatonProcess.December2020.Domain.Models.ApplicantViewModel) on controller Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantApiController (Hahn.ApplicatonProcess.December2020.Web).
+2021-02-04 02:41:24.048 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-02-04 02:41:24.092 +06:00 [INF] Request starting HTTP/2 GET https://localhost:44379/swagger/index.html - -
+2021-02-04 02:41:24.105 +06:00 [INF] Hosting environment: Development
+2021-02-04 02:41:24.106 +06:00 [INF] Content root path: G:\Hahn.ApplicatonProcess.Application\Hahn.ApplicatonProcess.December2020.Web
+2021-02-04 02:41:24.300 +06:00 [INF] Request finished HTTP/2 GET https://localhost:44379/swagger/index.html - - - 200 - text/html;charset=utf-8 211.4611ms
+2021-02-04 02:41:24.712 +06:00 [INF] Request starting HTTP/2 GET https://localhost:44379/swagger/v1/swagger.json - -
+2021-02-04 02:41:24.881 +06:00 [INF] Request finished HTTP/2 GET https://localhost:44379/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 168.2218ms
+2021-02-04 02:41:32.785 +06:00 [INF] Request starting HTTP/2 POST https://localhost:44379/api/ApplicantApi application/json 148
+2021-02-04 02:41:32.823 +06:00 [INF] Executing endpoint 'Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantApiController.PostApplicant (Hahn.ApplicatonProcess.December2020.Web)'
+2021-02-04 02:41:32.846 +06:00 [INF] Route matched with {action = "PostApplicant", controller = "ApplicantApi"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult PostApplicant(Hahn.ApplicatonProcess.December2020.Domain.Models.ApplicantViewModel) on controller Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantApiController (Hahn.ApplicatonProcess.December2020.Web).
+2021-02-04 02:41:34.867 +06:00 [INF] Entity Framework Core 5.0.2 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: MaxPoolSize=128 StoreName=ApplicantDB 
+2021-02-04 02:41:34.992 +06:00 [INF] Saved 1 entities to in-memory store.
+2021-02-04 02:41:35.022 +06:00 [INF] Executing ObjectResult, writing value of type 'Hahn.ApplicatonProcess.December2020.Domain.Models.ApplicantViewModel'.
+2021-02-04 02:41:35.031 +06:00 [INF] Executed action Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantApiController.PostApplicant (Hahn.ApplicatonProcess.December2020.Web) in 2179.0009ms
+2021-02-04 02:41:35.032 +06:00 [INF] Executed endpoint 'Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantApiController.PostApplicant (Hahn.ApplicatonProcess.December2020.Web)'
+2021-02-04 02:41:35.043 +06:00 [INF] Request finished HTTP/2 POST https://localhost:44379/api/ApplicantApi application/json 148 - 201 - application/json;+charset=utf-8 2257.8380ms
+2021-02-04 02:41:49.845 +06:00 [INF] Request starting HTTP/2 PUT https://localhost:44379/api/ApplicantApi/1 application/json 148
+2021-02-04 02:41:49.846 +06:00 [INF] Executing endpoint 'Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantApiController.UpdateApplicant (Hahn.ApplicatonProcess.December2020.Web)'
+2021-02-04 02:41:49.849 +06:00 [INF] Route matched with {action = "UpdateApplicant", controller = "ApplicantApi"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult UpdateApplicant(Int32, Hahn.ApplicatonProcess.December2020.Domain.Models.ApplicantViewModel) on controller Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantApiController (Hahn.ApplicatonProcess.December2020.Web).
+2021-02-04 02:43:19.065 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-02-04 02:43:19.145 +06:00 [INF] Request starting HTTP/2 GET https://localhost:44379/swagger/index.html - -
+2021-02-04 02:43:19.150 +06:00 [INF] Hosting environment: Development
+2021-02-04 02:43:19.150 +06:00 [INF] Content root path: G:\Hahn.ApplicatonProcess.Application\Hahn.ApplicatonProcess.December2020.Web
+2021-02-04 02:43:19.562 +06:00 [INF] Request finished HTTP/2 GET https://localhost:44379/swagger/index.html - - - 200 - text/html;charset=utf-8 420.2098ms
+2021-02-04 02:43:20.047 +06:00 [INF] Request starting HTTP/2 GET https://localhost:44379/swagger/v1/swagger.json - -
+2021-02-04 02:43:20.221 +06:00 [INF] Request finished HTTP/2 GET https://localhost:44379/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 174.1302ms
+2021-02-04 02:43:28.372 +06:00 [INF] Request starting HTTP/2 POST https://localhost:44379/api/ApplicantApi application/json 148
+2021-02-04 02:43:28.412 +06:00 [INF] Executing endpoint 'Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantApiController.PostApplicant (Hahn.ApplicatonProcess.December2020.Web)'
+2021-02-04 02:43:28.443 +06:00 [INF] Route matched with {action = "PostApplicant", controller = "ApplicantApi"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult PostApplicant(Hahn.ApplicatonProcess.December2020.Domain.Models.ApplicantViewModel) on controller Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantApiController (Hahn.ApplicatonProcess.December2020.Web).
+2021-02-04 02:43:30.001 +06:00 [INF] Entity Framework Core 5.0.2 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: MaxPoolSize=128 StoreName=ApplicantDB 
+2021-02-04 02:43:30.133 +06:00 [INF] Saved 1 entities to in-memory store.
+2021-02-04 02:43:30.146 +06:00 [INF] Executing ObjectResult, writing value of type 'Hahn.ApplicatonProcess.December2020.Domain.Models.ApplicantViewModel'.
+2021-02-04 02:43:30.152 +06:00 [INF] Executed action Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantApiController.PostApplicant (Hahn.ApplicatonProcess.December2020.Web) in 1704.1937ms
+2021-02-04 02:43:30.153 +06:00 [INF] Executed endpoint 'Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantApiController.PostApplicant (Hahn.ApplicatonProcess.December2020.Web)'
+2021-02-04 02:43:30.163 +06:00 [INF] Request finished HTTP/2 POST https://localhost:44379/api/ApplicantApi application/json 148 - 201 - application/json;+charset=utf-8 1790.2865ms
+2021-02-04 02:43:40.886 +06:00 [INF] Request starting HTTP/2 PUT https://localhost:44379/api/ApplicantApi/1 application/json 148
+2021-02-04 02:43:40.886 +06:00 [INF] Executing endpoint 'Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantApiController.UpdateApplicant (Hahn.ApplicatonProcess.December2020.Web)'
+2021-02-04 02:43:40.891 +06:00 [INF] Route matched with {action = "UpdateApplicant", controller = "ApplicantApi"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult UpdateApplicant(Int32, Hahn.ApplicatonProcess.December2020.Domain.Models.ApplicantViewModel) on controller Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantApiController (Hahn.ApplicatonProcess.December2020.Web).
+2021-02-04 02:43:41.770 +06:00 [ERR] Failed to connect to the database server to update applicant info.
+System.InvalidOperationException: The instance of entity type 'Applicant' cannot be tracked because another instance with the same key value for {'ID'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.ThrowIdentityConflict(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry, Boolean updateDuplicate)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.StartTracking(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState oldState, EntityState newState, Boolean acceptChanges, Boolean modifyProperties)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState entityState, Boolean acceptChanges, Boolean modifyProperties, Nullable`1 forceStateWhenUnknownKey)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.PaintAction(EntityEntryGraphNode`1 node)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityEntryGraphIterator.TraverseGraph[TState](EntityEntryGraphNode`1 node, Func`2 handleNode)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.AttachGraph(InternalEntityEntry rootEntry, EntityState targetState, EntityState storeGeneratedWithKeySetTargetState, Boolean forceStateWhenUnknownKey)
+   at Microsoft.EntityFrameworkCore.DbContext.SetEntityState(InternalEntityEntry entry, EntityState entityState)
+   at Microsoft.EntityFrameworkCore.DbContext.SetEntityState[TEntity](TEntity entity, EntityState entityState)
+   at Microsoft.EntityFrameworkCore.DbContext.Attach[TEntity](TEntity entity)
+   at Hahn.ApplicatonProcess.December2020.Data.Repository.ApplicantRepository.UpdateApplicantInfo(Int32 id, Applicant model) in G:\Hahn.ApplicatonProcess.Application\Hahn.ApplicatonProcess.December2020.Data\Repository\ApplicantRepository.cs:line 57
+2021-02-04 02:43:41.821 +06:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2021-02-04 02:43:41.825 +06:00 [INF] Executed action Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantApiController.UpdateApplicant (Hahn.ApplicatonProcess.December2020.Web) in 934.0555ms
+2021-02-04 02:43:41.825 +06:00 [INF] Executed endpoint 'Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantApiController.UpdateApplicant (Hahn.ApplicatonProcess.December2020.Web)'
+2021-02-04 02:43:41.826 +06:00 [INF] Request finished HTTP/2 PUT https://localhost:44379/api/ApplicantApi/1 application/json 148 - 500 - application/problem+json;+charset=utf-8 940.4858ms
+2021-02-04 02:43:52.386 +06:00 [INF] Request starting HTTP/2 PUT https://localhost:44379/api/ApplicantApi/1 application/json 148
+2021-02-04 02:43:52.386 +06:00 [INF] Executing endpoint 'Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantApiController.UpdateApplicant (Hahn.ApplicatonProcess.December2020.Web)'
+2021-02-04 02:43:52.387 +06:00 [INF] Route matched with {action = "UpdateApplicant", controller = "ApplicantApi"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult UpdateApplicant(Int32, Hahn.ApplicatonProcess.December2020.Domain.Models.ApplicantViewModel) on controller Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantApiController (Hahn.ApplicatonProcess.December2020.Web).
+2021-02-04 02:47:36.540 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-02-04 02:47:36.595 +06:00 [INF] Request starting HTTP/2 GET https://localhost:44379/swagger/index.html - -
+2021-02-04 02:47:36.597 +06:00 [INF] Hosting environment: Development
+2021-02-04 02:47:36.598 +06:00 [INF] Content root path: G:\Hahn.ApplicatonProcess.Application\Hahn.ApplicatonProcess.December2020.Web
+2021-02-04 02:47:36.722 +06:00 [INF] Request finished HTTP/2 GET https://localhost:44379/swagger/index.html - - - 200 - text/html;charset=utf-8 130.4783ms
+2021-02-04 02:47:37.135 +06:00 [INF] Request starting HTTP/2 GET https://localhost:44379/swagger/v1/swagger.json - -
+2021-02-04 02:47:37.278 +06:00 [INF] Request finished HTTP/2 GET https://localhost:44379/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 143.6875ms
+2021-02-04 02:47:46.281 +06:00 [INF] Request starting HTTP/2 POST https://localhost:44379/api/ApplicantApi application/json 148
+2021-02-04 02:47:46.343 +06:00 [INF] Executing endpoint 'Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantApiController.PostApplicant (Hahn.ApplicatonProcess.December2020.Web)'
+2021-02-04 02:47:46.364 +06:00 [INF] Route matched with {action = "PostApplicant", controller = "ApplicantApi"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult PostApplicant(Hahn.ApplicatonProcess.December2020.Domain.Models.ApplicantViewModel) on controller Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantApiController (Hahn.ApplicatonProcess.December2020.Web).
+2021-02-04 02:47:48.206 +06:00 [INF] Entity Framework Core 5.0.2 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: MaxPoolSize=128 StoreName=ApplicantDB 
+2021-02-04 02:47:48.377 +06:00 [INF] Saved 1 entities to in-memory store.
+2021-02-04 02:47:48.394 +06:00 [INF] Executing ObjectResult, writing value of type 'Hahn.ApplicatonProcess.December2020.Domain.Models.ApplicantViewModel'.
+2021-02-04 02:47:48.401 +06:00 [INF] Executed action Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantApiController.PostApplicant (Hahn.ApplicatonProcess.December2020.Web) in 2030.1674ms
+2021-02-04 02:47:48.401 +06:00 [INF] Executed endpoint 'Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantApiController.PostApplicant (Hahn.ApplicatonProcess.December2020.Web)'
+2021-02-04 02:47:48.415 +06:00 [INF] Request finished HTTP/2 POST https://localhost:44379/api/ApplicantApi application/json 148 - 201 - application/json;+charset=utf-8 2134.5638ms
+2021-02-04 02:48:02.861 +06:00 [INF] Request starting HTTP/2 PUT https://localhost:44379/api/ApplicantApi/1 application/json 148
+2021-02-04 02:48:02.862 +06:00 [INF] Executing endpoint 'Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantApiController.UpdateApplicant (Hahn.ApplicatonProcess.December2020.Web)'
+2021-02-04 02:48:02.867 +06:00 [INF] Route matched with {action = "UpdateApplicant", controller = "ApplicantApi"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult UpdateApplicant(Int32, Hahn.ApplicatonProcess.December2020.Domain.Models.ApplicantViewModel) on controller Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantApiController (Hahn.ApplicatonProcess.December2020.Web).
+2021-02-04 02:48:05.165 +06:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 201
+2021-02-04 02:48:05.165 +06:00 [INF] Executed action Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantApiController.UpdateApplicant (Hahn.ApplicatonProcess.December2020.Web) in 2298.5336ms
+2021-02-04 02:48:05.165 +06:00 [INF] Executed endpoint 'Hahn.ApplicatonProcess.December2020.Web.Controllers.ApplicantApiController.UpdateApplicant (Hahn.ApplicatonProcess.December2020.Web)'
+2021-02-04 02:48:05.167 +06:00 [INF] Request finished HTTP/2 PUT https://localhost:44379/api/ApplicantApi/1 application/json 148 - 201 - - 2305.7388ms
